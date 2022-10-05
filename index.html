@@ -21,10 +21,23 @@
         <form class="needs-validation">
             <div class="form-group was-validated">
                 <label class="form-label" for="text">RUC</label>
-                <input class="form-control" type="text" id="ruc" required>
-                <div class="invalid-feedback">
-                    Ingresa RUC del emisor
-                </div>
+                <select class="form-control" type="combo" id="ruc_emisor" required>
+                    <option> </option>
+                    <option>Jirón Perú</option>
+                    <option>Harina de otro costal</option>
+                    <option>Maia</option>
+                    <option>CompuExpress</option>
+                    <option>Arcaservis</option>
+                    <option>Arcacervic</option>
+                    <option>Difashbela</option>
+                    <option>GianCorp</option>
+                    <option>Las Yolas</option>
+                    <option>Dsi</option>
+                    <option>Rbchachani</option>
+                    <option>1break</option>
+                    <option>Cevichero</option>
+                </select>
+                <div class="invalid-feedback">Tipo de documento</div>
             </div>
             <div class="form-group was-validated">
                 <label class="form-label" for="text">Tipo de comprobante</label>
@@ -37,6 +50,13 @@
                     <option>ANULACION</option>
                 </select>
                 <div class="invalid-feedback">Tipo de documento</div>
+            </div>
+            <div class="form-group was-validated">
+                <label class="form-label" for="text">RUC cliente</label>
+                <input class="form-control" type="text" id="ruc_receptor" required>
+                <div class="invalid-feedback">
+                    Ruc del cliente
+                </div>
             </div>
             <div class="form-group was-validated">
                 <label class="form-label" for="text">Serie</label>
